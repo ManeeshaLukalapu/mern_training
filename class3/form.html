@@ -6,82 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    
-        <fieldset>
-            <legend>personal information</legend>
-            <label for="name">First NAME:</label>
-        <input type="text" name="name"placeholder="Enter your firts name" id=""name>
-        <br>
-        <br>
-        <label for="name">Last NAME:</label>
-        <input type="text" name="name" placeholder="Enter your last name">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="Enter your email"/>
-        <br>
-        <br>
-        <input type="submit" value="submit"/>
-        </fieldset>
-
-        <fieldset>
-            <legend>Education Section</legend>
-            <label for="degree">Degree:</label>
-            <input type="text" name="Degree" placeholder="Enter your Degree"/>
-            <br><br>
-            <label for="degree">Institute:</label>
-            <input type="text"name="institute" placeholder="Enter your institute"/>
-
-        </fieldset>
-        <br><br>
-        <!--text are to take multiline input from user-->
-        <textarea name="" id=""placeholder="enter your feedback..."></textarea>
-        <!--button mathod-->
-        <input type="submit" value="submit"/>
-        <button>click hear to submit</button>
-        <br /><br /><br />
-        <!--how to make dropdown-->
-        <!--using select and option element-->
-        <select name="country">
-            <option value="US">US</option>
-            <option value="UK">UK</option>
-            <option value="INDIA"INDIA></option>
-            <option value="CANADA">CANADA</option>
+    <fieldset>
+        <legend>College details</legend>
+        <label for="college">Collage name</label>
+        <input type="text" name="college" id="college"><br><br>
+        <label for="address">Address</label>
+        <input type="number" name="address" id="address"><br><br>
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+    </fieldset>
+    <fieldset>
+        <legend>Educational details</legend>
+        <label for="department">Department name</label>
+        <input type="text" name="department" id="department"><br><br>
+        <label for="section">Section</label>
+        <input type="number" name="section" id="section"><br><br>
+        <label for="cgpa">CGPA</label>
+        <input type="text" name="cgpa" id="cgpa">
+    </fieldset>
+    <br><br>
+    <textarea name="" id="" placeholder="enter your feedback"></textarea>
+    <br><br>
+    <fieldset>
+        <legend>dishes we offer</legend>
+        <select name="" id="">
+            <optgroup label="veg">
+                <option value="">paneer</option>
+                <option value="">aloo</option>
+                <option value="">gobhi</option>
+            </optgroup>
+            <optgroup label="non-veg">
+                <option value="">chicken</option>
+                <option value="">mutton</option>
+                <option value="">fish</option>
+            </optgroup>
+            <optgroup label="vegan">
+                <option value="">dish 1</option>
+                <option value="">dish 2</option>
+                <option value="">mushroom</option>
+            </optgroup>
         </select>
-        <fieldset>
-            <legend>dishes we offer</legend>
-            <select name="" id="">
-                <optgroup label="veg">
-                    <option value="">paneer</option>
-                    <option value="">aloo</option>
-                    <option value="">gobhi</option>
-                </optgroup>
-                <optgroup label="non-veg">
-                    <option value="">chicken</option>
-                    <option value="">mutton</option>
-                    <option value="">fish</option>
-                </optgroup>
-                <optgroup label="vegan">
-                    <option value="">dish 1</option>
-                    <option value="">dish 2</option>
-                    <option value="">mushroom</option>
+    </fieldset><br><br><br>
+    <!--datalist tag in html form-->
+    <input type="text" list="browsers" name="browser" placeholder="enter your favourite browser name.."/>
+    <datalist id="browsers">
+        <option value="chrome"></option>
+        <option value="microedge"></option>
+        <option value="safari"></option>
+        <option value="opera"></option>
+    </datalist><br><br><br>
+    <form oninput="result.value = parseInt(a.value)+parseInt(b.value)">
+        <input type="number" name="a" id="a">+
+        <input type="number" name="b" id="b">=
+        <output name="result"></output>
+    </form>
 
-                </optgroup>
-            </select>
-        </fieldset><br><br><br>
-        <!--datalist tag in html form-->
-        <input type="text" list="browsers" name="browser" placeholder="enter your favourate browser name.."/>
-        <datalist id="browsers">
-            <option value="chrome"></option>
-            <option value="microedge"></option>
-            <option value="safari"></option>
-            <option value="opera"></option>
-        </datalist><br><br><br>
-        <form oninput="result.value = parseInt(a.value)+parseInt(b.value)">
-            <input type="number" name="a" id="a">+
-            <input type="number" name="b" id="b">=
-            <output name="result"></output>
-        </form>
-    
 </body>
 </html>
